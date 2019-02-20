@@ -14,66 +14,66 @@ public class PosReportingOrder {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    public static @FindBy(xpath = "//button[@class='btn btn-icon fa fa-lg fa-bar-chart o_cp_switch_graph active']")
-    WebElement graphElement;
+    @FindBy(xpath = "//button[@class='btn btn-icon fa fa-lg fa-bar-chart o_cp_switch_graph active']")
+    public WebElement graphElement;
 
-    public static @FindBy(xpath = "//button[@class='btn btn-icon fa fa-lg fa-table o_cp_switch_pivot']")
-    WebElement pivotElement;
+    @FindBy(xpath = "//button[@class='btn btn-icon fa fa-lg fa-table o_cp_switch_pivot']")
+    public WebElement pivotElement;
 
-    public static @FindBy(xpath = "//div[@class='o_graph']")
-    WebElement graphImageElement;
+    @FindBy(xpath = "//div[@class='o_graph']")
+    public WebElement graphImageElement;
 
-    public static @FindBy(xpath = "//div[@class='o_view_manager_content']")
-    WebElement pivotImageElement;
+    @FindBy(xpath = "//div[@class='o_view_manager_content']")
+    public WebElement pivotImageElement;
 
-    public static @FindBy(xpath = "//button[@class='btn btn-default fa fa-bar-chart-o o_graph_button active']")
-    WebElement barChart;
-
-
-    public static @FindBy(xpath = "//*[@class='nvd3 nv-wrap nv-multiBarWithLegend']")
-    WebElement barChartImageElement;
+    @FindBy(xpath = "//button[@class='btn btn-default fa fa-bar-chart-o o_graph_button active']")
+    public WebElement barChart;
 
 
-    public static @FindBy(xpath = "//button[@class='btn btn-default fa fa-line-chart o_graph_button']")
-    WebElement lineChart;
+    @FindBy(xpath = "//*[@class='nvd3 nv-wrap nv-multiBarWithLegend']")
+    public WebElement barChartImageElement;
 
 
-    public static @FindBy(xpath = "//*[@class='nvd3 nv-wrap nv-lineChart']")
-    WebElement lineChartImageElement;
+    @FindBy(xpath = "//button[@class='btn btn-default fa fa-line-chart o_graph_button']")
+    public WebElement lineChart;
 
 
-    public static @FindBy(xpath = "//button[@class='btn btn-default fa fa-pie-chart o_graph_button']")
-    WebElement pieChart;
+    @FindBy(xpath = "//*[@class='nvd3 nv-wrap nv-lineChart']")
+    public WebElement lineChartImageElement;
 
 
-    public static @FindBy(xpath = "(//div[@class='oe_view_nocontent']/p)[2]")
-    WebElement pieChartErrorMessage;
+    @FindBy(xpath = "//button[@class='btn btn-default fa fa-pie-chart o_graph_button']")
+    public WebElement pieChart;
 
 
-    public static @FindBy(xpath = "btn btn-default fa fa-expand o_pivot_flip_button")
-    WebElement flipAxis;
+    @FindBy(xpath = "(//div[@class='oe_view_nocontent']/p)[2]")
+    public WebElement pieChartErrorMessage;
 
 
-    public static @FindBy(xpath = "(//*[@class='o_pivot_measure_row text-muted hidden-xs'])[6]")
-    WebElement flipAxisImageElement;
+    @FindBy(xpath = "btn btn-default fa fa-expand o_pivot_flip_button")
+    public WebElement flipAxis;
 
 
-    public static @FindBy(xpath = "(//*[@class='btn-group btn-group-sm'])[1]")
-    WebElement measureTable;
+    @FindBy(xpath = "(//*[@class='o_pivot_measure_row text-muted hidden-xs'])[6]")
+    public WebElement flipAxisImageElement;
 
-    public static @FindBy(xpath = "//ul[@class='dropdown-menu o_graph_measures_list']/li")
-    List<WebElement> graphMeasureTable;
 
-    public static @FindBy(xpath = "//*[@class='nv-legend-text']")
-    WebElement measureOptionText;
+    @FindBy(xpath = "(//*[@class='btn-group btn-group-sm'])[1]")
+    public WebElement measureTable;
 
-    public static @FindBy(xpath = "//button[@class='btn btn-primary btn-sm dropdown-toggle']")
-    WebElement measureTable2;
+    @FindBy(xpath = "//ul[@class='dropdown-menu o_graph_measures_list']/li")
+    public List<WebElement> graphMeasureTable;
 
-    public static @FindBy(xpath = "//ul[@class='dropdown-menu o_pivot_measures_list']/li")
-    List<WebElement> pivotMeasureTable;
+    @FindBy(xpath = "//*[@class='nv-legend-text']")
+    public WebElement measureOptionText;
 
-    public static @FindBy(xpath = "//button[@class='btn btn-default fa fa-download o_pivot_download']")
-    WebElement downloadButton;
+    @FindBy(xpath = "//button[@class='btn btn-primary btn-sm dropdown-toggle']")
+    public WebElement measureTable2;
+
+    @FindBy(xpath = "//ul[@class='dropdown-menu o_pivot_measures_list']/li")
+    public List<WebElement> pivotMeasureTable;
+
+    @FindBy(xpath = "//button[@class='btn btn-default fa fa-download o_pivot_download']")
+    public WebElement downloadButton;
 
 }
