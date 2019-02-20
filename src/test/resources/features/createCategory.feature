@@ -1,4 +1,8 @@
+
+
 Feature: Manager should be able to create new a category.
+
+
 
   Background:
     Given user on the data base page

@@ -7,10 +7,7 @@ import cucumber.api.java.en.When;
 public class createCategorySD {
 
 
-    @Then("the user should be on the Point of Sale page")
-    public void the_user_should_be_on_the_Point_of_Sale_page() {
 
-    }
 
     @Then("the {string} should be displayed on the main panel")
     public void the_should_be_displayed_on_the_main_panel(String string) {

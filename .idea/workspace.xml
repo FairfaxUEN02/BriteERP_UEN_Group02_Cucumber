@@ -2,13 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f0ba29c-fd55-41e8-9779-948d79c84a2e" name="Default Changelist" comment="updated the login.feature &amp; login page step defination">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/briteerp/pages/PosReportingOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/briteerp/step_definitions/reportingChartsSD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/briteerp/step_definitions/reportingViewSD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/reportingCharts.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/reportingView.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/briteerp/pages/PosReportingOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/briteerp/pages/PosReportingOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/briteerp/runners/CukesRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/briteerp/runners/CukesRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/briteerp/step_definitions/createCategorySD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/briteerp/step_definitions/createCategorySD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/briteerp/step_definitions/login_step_definition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/briteerp/step_definitions/login_step_definition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/categoryList.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/categoryList.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/createCategory.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/createCategory.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/login.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/default-cucumber-reports/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/default-cucumber-reports/report.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/briteerp/step_definitions/createCategorySD.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/briteerp/step_definitions/createCategorySD.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/briteerp/step_definitions/login_step_definition.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/briteerp/step_definitions/login_step_definition.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/createCategory.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/createCategory.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/login.feature" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -21,73 +30,30 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/features/login.feature">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/features/reportingView.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/briteerp/step_definitions/createCategorySD.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/briteerp/step_definitions/login_step_definition.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
-              <folding>
-                <element signature="e#494#495#0" expanded="true" />
-                <element signature="e#571#572#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/features/manageCategory.feature">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+            <state relative-caret-position="15">
+              <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/features/createCategory.feature">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-            </state>
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/briteerp/pages/HomePage.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/briteerp/step_definitions/reportingViewSD.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="598">
-              <caret line="48" column="11" selection-start-line="48" selection-start-column="11" selection-end-line="48" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/briteerp/pages/PosReportingOrder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="618">
-              <caret line="64" column="12" selection-start-line="64" selection-start-column="12" selection-end-line="64" selection-end-column="12" />
+            <state relative-caret-position="417">
+              <caret line="28" column="71" selection-start-line="28" selection-start-column="71" selection-end-line="28" selection-end-column="71" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#377#378#0" expanded="true" />
+                <element signature="e#431#432#0" expanded="true" />
+                <element signature="e#774#775#0" expanded="true" />
+                <element signature="e#828#829#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -97,7 +63,43 @@
         <entry file="file://$PROJECT_DIR$/src/test/resources/features/categoryList.feature">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="660">
-              <caret line="44" column="4" lean-forward="true" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="4" />
+              <caret line="44" column="4" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/briteerp/runners/CukesRunner.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="18" lean-forward="true" selection-end-line="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/features/reportingCharts.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="4" selection-start-column="4" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/briteerp/step_definitions/reportingChartsSD.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="44" column="43" selection-start-line="44" selection-start-column="43" selection-end-line="44" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#656#657#0" expanded="true" />
+                <element signature="e#706#707#0" expanded="true" />
+                <element signature="e#979#980#0" expanded="true" />
+                <element signature="e#1030#1031#0" expanded="true" />
+                <element signature="e#1304#1305#0" expanded="true" />
+                <element signature="e#1354#1355#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -126,15 +128,19 @@
         <option value="$PROJECT_DIR$/src/test/resources/features/1 (10).feature" />
         <option value="$PROJECT_DIR$/src/test/resources/features/1 (11).feature" />
         <option value="$PROJECT_DIR$/src/test/java/com/briteerp/pages/count.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/briteerp/runners/CukesRunner.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/briteerp/pages/HomePage.java" />
         <option value="$PROJECT_DIR$/configuration.properties" />
-        <option value="$PROJECT_DIR$/src/test/java/com/briteerp/pages/PosReportingOrder.java" />
         <option value="$PROJECT_DIR$/src/test/resources/features/categoryList.feature" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/createCategory.feature" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/login.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/com/briteerp/step_definitions/createCategorySD.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/briteerp/step_definitions/login_step_definition.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/briteerp/step_definitions/createCategorySD.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/login.feature" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/createCategory.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/com/briteerp/pages/PosReportingOrder.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/briteerp/step_definitions/reportingChartsSD.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/reportingView.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/com/briteerp/step_definitions/reportingViewSD.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/reportingCharts.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/com/briteerp/runners/CukesRunner.java" />
       </list>
     </option>
   </component>
@@ -145,11 +151,9 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1670" />
-    <option name="y" value="29" />
-    <option name="width" value="1901" />
-    <option name="height" value="1052" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1680" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -158,34 +162,33 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="BriteERP_UEN_Group2_F2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BriteERP_UEN_Group02_Cucumber" type="b2602c69:ProjectViewProjectNode" />
               <item name="BriteERP_UEN_Group02_Cucumber" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="BriteERP_UEN_Group2_F2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BriteERP_UEN_Group02_Cucumber" type="b2602c69:ProjectViewProjectNode" />
               <item name="BriteERP_UEN_Group02_Cucumber" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="BriteERP_UEN_Group2_F2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BriteERP_UEN_Group02_Cucumber" type="b2602c69:ProjectViewProjectNode" />
               <item name="BriteERP_UEN_Group02_Cucumber" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="BriteERP_UEN_Group2_F2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BriteERP_UEN_Group02_Cucumber" type="b2602c69:ProjectViewProjectNode" />
               <item name="BriteERP_UEN_Group02_Cucumber" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="BriteERP_UEN_Group2_F2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BriteERP_UEN_Group02_Cucumber" type="b2602c69:ProjectViewProjectNode" />
               <item name="BriteERP_UEN_Group02_Cucumber" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
@@ -193,7 +196,7 @@
               <item name="briteerp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="BriteERP_UEN_Group2_F2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BriteERP_UEN_Group02_Cucumber" type="b2602c69:ProjectViewProjectNode" />
               <item name="BriteERP_UEN_Group02_Cucumber" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
@@ -202,7 +205,7 @@
               <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="BriteERP_UEN_Group2_F2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BriteERP_UEN_Group02_Cucumber" type="b2602c69:ProjectViewProjectNode" />
               <item name="BriteERP_UEN_Group02_Cucumber" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
@@ -211,7 +214,7 @@
               <item name="runners" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="BriteERP_UEN_Group2_F2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BriteERP_UEN_Group02_Cucumber" type="b2602c69:ProjectViewProjectNode" />
               <item name="BriteERP_UEN_Group02_Cucumber" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
@@ -220,45 +223,35 @@
               <item name="step_definitions" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="BriteERP_UEN_Group2_F2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BriteERP_UEN_Group02_Cucumber" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="briteerp" type="462c0819:PsiDirectoryNode" />
-              <item name="utilities" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BriteERP_UEN_Group2_F2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BriteERP_UEN_Group02_Cucumber" type="b2602c69:ProjectViewProjectNode" />
               <item name="BriteERP_UEN_Group02_Cucumber" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="BriteERP_UEN_Group2_F2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BriteERP_UEN_Group02_Cucumber" type="b2602c69:ProjectViewProjectNode" />
               <item name="BriteERP_UEN_Group02_Cucumber" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="features" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="BriteERP_UEN_Group2_F2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BriteERP_UEN_Group02_Cucumber" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550609758042" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550640378729" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources/features" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/test/resources/features" />
     </key>
   </component>
@@ -274,7 +267,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Cucumber java.Feature: login">
+  <component name="RunManager" selected="JUnit.CukesRunner">
     <configuration name="count" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.briteerp.pages.count" />
       <module name="BriteERP_UEN_Group02_Cucumber" />
@@ -307,7 +300,7 @@
       </method>
     </configuration>
     <configuration name="CukesRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BriteERP_UEN_Group02_Cucumber" />
+      <module name="BriteERP_UEN_Group2_F2" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.briteerp.runners.*" />
@@ -316,15 +309,17 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.briteerp.runners" />
       <option name="MAIN_CLASS_NAME" value="com.briteerp.runners.CukesRunner" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber java.Feature: login" />
         <item itemvalue="JUnit.CukesRunner" />
+        <item itemvalue="Cucumber java.Feature: login" />
         <item itemvalue="Application.count" />
       </list>
     </recent_temporary>
@@ -343,35 +338,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CukesRunner - 2019.02.15 at 14h 12m 19s.xml">
+    <history-entry file="CukesRunner - 2019.02.19 at 18h 29m 39s.xml">
       <configuration name="CukesRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CukesRunner - 2019.02.15 at 14h 50m 46s.xml">
+    <history-entry file="CukesRunner - 2019.02.19 at 18h 32m 15s.xml">
       <configuration name="CukesRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CukesRunner - 2019.02.15 at 14h 51m 21s.xml">
+    <history-entry file="CukesRunner - 2019.02.19 at 22h 34m 21s.xml">
       <configuration name="CukesRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CukesRunner - 2019.02.15 at 14h 59m 06s.xml">
+    <history-entry file="CukesRunner - 2019.02.19 at 22h 40m 29s.xml">
       <configuration name="CukesRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CukesRunner - 2019.02.15 at 15h 07m 01s.xml">
+    <history-entry file="CukesRunner - 2019.02.19 at 22h 43m 36s.xml">
       <configuration name="CukesRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CukesRunner - 2019.02.15 at 15h 23m 48s.xml">
+    <history-entry file="CukesRunner - 2019.02.19 at 23h 32m 11s.xml">
       <configuration name="CukesRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CukesRunner - 2019.02.19 at 11h 58m 49s.xml">
+    <history-entry file="CukesRunner - 2019.02.19 at 23h 32m 27s.xml">
       <configuration name="CukesRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CukesRunner - 2019.02.19 at 14h 44m 16s.xml">
+    <history-entry file="CukesRunner - 2019.02.19 at 23h 35m 30s.xml">
       <configuration name="CukesRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CukesRunner - 2019.02.19 at 14h 53m 43s.xml">
+    <history-entry file="CukesRunner - 2019.02.19 at 23h 36m 38s.xml">
       <configuration name="CukesRunner" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Feature__login - 2019.02.19 at 14h 54m 27s.xml">
-      <configuration name="Feature: login" configurationId="CucumberJavaRunConfigurationType" />
+    <history-entry file="CukesRunner - 2019.02.19 at 23h 48m 53s.xml">
+      <configuration name="CukesRunner" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -384,10 +379,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1680" y="23" width="1920" height="1057" extended-state="6" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17625134" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18376069" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -396,7 +391,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.25675675" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.45306122" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -404,7 +399,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32959184" />
-      <window_info active="true" anchor="bottom" id="Messages" order="10" visible="true" weight="0.32953367" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32953367" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -447,18 +442,6 @@
     <MESSAGE value="updated the login.feature &amp; login page step defination" />
     <option name="LAST_COMMIT_MESSAGE" value="updated the login.feature &amp; login page step defination" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/briteerp/runners/CukesRunner.java</url>
-          <line>15</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../1 (7).feature" />
     <entry file="file://$PROJECT_DIR$/src/test/resources/features/C_createCategory.feature" />
@@ -485,16 +468,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/briteerp/pages/count.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/briteerp/step_definitions/hooks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/briteerp/pages/PosCategories.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -506,23 +479,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/briteerp/runners/CukesRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/briteerp/utilities/BrowserUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="201" column="7" selection-start-line="201" selection-start-column="7" selection-end-line="201" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -554,62 +510,128 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/briteerp/pages/PosReportingOrder.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/briteerp/step_definitions/createCategorySD.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="618">
-          <caret line="64" column="12" selection-start-line="64" selection-start-column="12" selection-end-line="64" selection-end-column="12" />
+        <state relative-caret-position="420">
+          <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/createCategory.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/categoryList.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="44" column="4" lean-forward="true" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/features/manageCategory.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+        <state relative-caret-position="240">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/login.feature">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/briteerp/step_definitions/hooks.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/briteerp/step_definitions/createCategorySD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="135">
+          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/briteerp/utilities/BrowserUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1170">
+          <caret line="88" column="40" selection-start-line="88" selection-start-column="23" selection-end-line="88" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/login.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/briteerp/step_definitions/login_step_definition.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+        <state relative-caret-position="510">
+          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
           <folding>
-            <element signature="e#494#495#0" expanded="true" />
-            <element signature="e#571#572#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/briteerp/pages/PosReportingOrder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/briteerp/step_definitions/reportingViewSD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="28" column="71" selection-start-line="28" selection-start-column="71" selection-end-line="28" selection-end-column="71" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#377#378#0" expanded="true" />
+            <element signature="e#431#432#0" expanded="true" />
+            <element signature="e#774#775#0" expanded="true" />
+            <element signature="e#828#829#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/reportingCharts.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="4" selection-start-column="4" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/reportingView.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/briteerp/step_definitions/reportingChartsSD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="44" column="43" selection-start-line="44" selection-start-column="43" selection-end-line="44" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#656#657#0" expanded="true" />
+            <element signature="e#706#707#0" expanded="true" />
+            <element signature="e#979#980#0" expanded="true" />
+            <element signature="e#1030#1031#0" expanded="true" />
+            <element signature="e#1304#1305#0" expanded="true" />
+            <element signature="e#1354#1355#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/createCategory.feature">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/categoryList.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="44" column="4" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/briteerp/runners/CukesRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="18" lean-forward="true" selection-end-line="18" />
         </state>
       </provider>
     </entry>
