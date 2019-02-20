@@ -6,16 +6,8 @@ import cucumber.api.java.en.When;
 
 public class createCategorySD {
 
-    @When("the user clicks on Point of Sale")
-    public void the_user_clicks_on_Point_of_Sale() {
-        HomePage homePage = new HomePage();
-        homePage.pointOfSaleElement.click();
-    }
 
-    @Then("the user should be on the Point of Sale page")
-    public void the_user_should_be_on_the_Point_of_Sale_page() {
 
-    }
 
     @Then("the {string} should be displayed on the main panel")
     public void the_should_be_displayed_on_the_main_panel(String string) {

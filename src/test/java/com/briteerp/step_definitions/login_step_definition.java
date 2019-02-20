@@ -30,5 +30,12 @@ public class login_step_definition {
 
     }
 
+    @When("the user clicks on Point of Sale")
+    public void the_user_clicks_on_Point_of_Sale() {
+        HomePage homePage = new HomePage();
+        homePage.pointOfSaleElement.click();
+    }
+
+
 
 }
