@@ -6,23 +6,87 @@
         "before": [
           {
             "result": {
-              "duration": 401199,
-              "status": "skipped"
+              "duration": 8531031266,
+              "status": "passed"
             },
             "match": {
               "location": "hooks.setUp()"
             }
           }
         ],
-        "line": 5,
-        "name": "Pos manager login",
-        "description": "",
-        "id": "login-functionality;pos-manager-login",
+        "line": 16,
+        "name": "As a POS Manager I should be able to edit the point of sale on it’s page",
+        "description": "\t\tFeature: Config POS edit page\n\n\t\tBackground:",
+        "id": "as-a-pos-manager-i-should-be-able-to-edit-the-point-of-sale-on-it’s-page;as-a-pos-manager-i-should-be-able-to-edit-the-point-of-sale-on-it’s-page",
         "after": [
           {
             "result": {
-              "duration": 7675,
-              "status": "skipped"
+              "duration": 952740247,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 298667,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user on the point of sale page",
+            "match": {
+              "location": "edit_ConfigPOS_step.user_on_the_point_of_sale_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 104960,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "the user clicks on Point of Sale under Configuration",
+            "match": {
+              "location": "edit_ConfigPOS_step.the_user_clicks_on_Point_of_Sale_under_Configuration()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@BRIT-4211"
+          },
+          {
+            "name": "@wip"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5414092123,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks.setUp()"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "user should able to change point of sale status from active to archived",
+        "description": "",
+        "id": "as-a-pos-manager-i-should-be-able-to-edit-the-point-of-sale-on-it’s-page;user-should-able-to-change-point-of-sale-status-from-active-to-archived",
+        "after": [
+          {
+            "result": {
+              "duration": 753659201,
+              "status": "passed"
             },
             "match": {
               "location": "hooks.tearDown(Scenario)"
@@ -36,8 +100,8 @@
             "result": {
               "status": "undefined"
             },
-            "line": 6,
-            "name": "user on the data base page",
+            "line": 24,
+            "name": "user on the point of sale page under Configuration",
             "match": {},
             "keyword": "Given "
           },
@@ -45,8 +109,8 @@
             "result": {
               "status": "undefined"
             },
-            "line": 7,
-            "name": "user selects the data base",
+            "line": 25,
+            "name": "user clicks on an existing point of sale name",
             "match": {},
             "keyword": "When "
           },
@@ -54,10 +118,189 @@
             "result": {
               "status": "undefined"
             },
+            "line": 26,
+            "name": "user clicks Archive button",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 27,
+            "name": "the archived text should display on the page",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5687178107,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks.setUp()"
+            }
+          }
+        ],
+        "line": 29,
+        "name": "user should able to set point of sale as Bar/Restaurant",
+        "description": "",
+        "id": "as-a-pos-manager-i-should-be-able-to-edit-the-point-of-sale-on-it’s-page;user-should-able-to-set-point-of-sale-as-bar/restaurant",
+        "after": [
+          {
+            "result": {
+              "duration": 663700763,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 30,
+            "name": "user on the point of sale edit page",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 31,
+            "name": "user clicks Is a Bar/Restaurant check box and save",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 32,
+            "name": "the Bar/Restaurant check box should be selected on the page",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
+    "name": "As a POS Manager I should be able to edit the point of sale on it’s page",
+    "description": "",
+    "id": "as-a-pos-manager-i-should-be-able-to-edit-the-point-of-sale-on-it’s-page",
+    "keyword": "Feature",
+    "uri": "src\\test\\resources\\features\\configPOSedit.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 6327681420,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks.setUp()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Pos manager login",
+        "description": "",
+        "id": "login-functionality;pos-manager-login",
+        "after": [
+          {
+            "result": {
+              "duration": 654250945,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1799746048,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user on the data base page",
+            "match": {
+              "location": "login_step_definition.user_on_the_data_base_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1924223967,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user selects the data base",
+            "match": {
+              "location": "login_step_definition.user_selects_the_data_base()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4353083457,
+              "status": "passed"
+            },
             "line": 8,
             "name": "user logs in using \"in_pos_manager@info.com\" and \"KjKtfgrs30\"",
-            "match": {},
-            "keyword": "And "
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"in_pos_manager@info.com\"",
+                  "offset": 19
+                },
+                {
+                  "val": "\"KjKtfgrs30\"",
+                  "offset": 49
+                }
+              ],
+              "location": "login_step_definition.user_logs_in_using_and(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 153079105,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the user clicks on Point of Sale",
+            "match": {
+              "location": "login_step_definition.the_user_clicks_on_Point_of_Sale()"
+            },
+            "keyword": "When "
           }
         ],
         "tags": [
@@ -71,7 +314,7 @@
     "description": "",
     "id": "login-functionality",
     "keyword": "Feature",
-    "uri": "src/test/resources/features/login.feature",
+    "uri": "src\\test\\resources\\features\\login.feature",
     "tags": []
   }
 ]
