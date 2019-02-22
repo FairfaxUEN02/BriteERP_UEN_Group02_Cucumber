@@ -1,7 +1,7 @@
 Feature: login functionality
 
 
-
+@wip
   Scenario: Pos manager login
     Given user on the data base page
     Then user selects the data base
