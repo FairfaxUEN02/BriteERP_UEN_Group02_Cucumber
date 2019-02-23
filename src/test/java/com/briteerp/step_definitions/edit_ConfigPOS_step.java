@@ -30,6 +30,7 @@ public class edit_ConfigPOS_step {
     public void user_on_the_point_of_sale_page_under_Configuration() {
         BrowserUtils.wait(3);
         Assert.assertEquals(Driver.getDriver().getTitle(),configPOSPage.ExpectedTitle);
+        BrowserUtils.wait(2);
     }
 
     @When("user clicks on an existing point of sale name")
@@ -132,4 +133,14 @@ public class edit_ConfigPOS_step {
         configPOSPage.HeaderTextarea.sendKeys("Welcome to the store");
         configPOSPage.FooterTextarea.sendKeys("Thank you for shopping with us");
     }
+    @Then("create button should be displayed on the page")
+    public void create_button_should_be_displayed_on_the_page() {
+       Assert.assertTrue(ConfigPOSPage.createElement.isDisplayed());
+    }
+
+    @Then("create button should not be displayed on the page")
+    public void create_button_should_not_be_displayed_on_the_page() {
+        Assert.assertFalse(ConfigPOSPage.createElement.isDisplayed());
+    }
+
 }

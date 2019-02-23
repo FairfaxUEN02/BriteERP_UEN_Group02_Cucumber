@@ -12,7 +12,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "com/briteerp/step_definitions"
         , dryRun = false
-        , tags ="@BRIT-4211"
+        , tags ="@BRIT-4310"
 )
 public class CukesRunner {
 }
