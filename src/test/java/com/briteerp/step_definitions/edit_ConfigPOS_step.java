@@ -2,6 +2,7 @@ package com.briteerp.step_definitions;
 
 import com.briteerp.pages.ConfigPOSPage;
 import com.briteerp.pages.HomePage;
+import com.briteerp.pages.LoginPage;
 import com.briteerp.utilities.BrowserUtils;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -23,7 +24,9 @@ public class edit_ConfigPOS_step {
 
     @Then("the user clicks on Point of Sale under Configuration")
     public void the_user_clicks_on_Point_of_Sale_under_Configuration() {
-        homePage.configPosElement.click();
+        BrowserUtils.wait(2);
+        if(homePage.configPosElement.isDisplayed()){
+        homePage.configPosElement.click();}
     }
 
     @Given("user on the point of sale page under Configuration")
@@ -133,6 +136,14 @@ public class edit_ConfigPOS_step {
         configPOSPage.HeaderTextarea.sendKeys("Welcome to the store");
         configPOSPage.FooterTextarea.sendKeys("Thank you for shopping with us");
     }
+
+    @Then("user logs in by using {string} and {string}")
+    public void user_logs_in_by_using_and(String email, String password) {
+        LoginPage loginPage = new LoginPage();
+        loginPage.login(email,password);
+
+    }
+
     @Then("create button should be displayed on the page")
     public void create_button_should_be_displayed_on_the_page() {
        Assert.assertTrue(ConfigPOSPage.createElement.isDisplayed());
@@ -140,7 +151,7 @@ public class edit_ConfigPOS_step {
 
     @Then("create button should not be displayed on the page")
     public void create_button_should_not_be_displayed_on_the_page() {
-        Assert.assertFalse(ConfigPOSPage.createElement.isDisplayed());
+        Assert.assertFalse(homePage.configPosElement.isDisplayed());
     }
 
 }

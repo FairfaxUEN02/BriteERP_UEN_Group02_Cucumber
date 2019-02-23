@@ -10,7 +10,7 @@ Feature: POS Manager should have access to create point of sale
   Scenario Outline: Verify only POSmanager should be able to create point of sale
     Given user on the data base page
     When user selects the data base
-    Then user logs in using "<email>" and "<password>"
+    Then user logs in by using "<email>" and "<password>"
     Then the user clicks on Point of Sale
     And the user clicks on Point of Sale under Configuration
     Then create button <expected> be displayed on the page
