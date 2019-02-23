@@ -28,6 +28,7 @@ public class edit_ConfigPOS_step {
 
     @Given("user on the point of sale page under Configuration")
     public void user_on_the_point_of_sale_page_under_Configuration() {
+        BrowserUtils.wait(3);
         Assert.assertEquals(Driver.getDriver().getTitle(),configPOSPage.ExpectedTitle);
     }
 
@@ -38,7 +39,9 @@ public class edit_ConfigPOS_step {
 
     @Then("user clicks Archive button")
     public void user_clicks_Archive_button() {
+
         configPOSPage.ArchiveElement.click();
+        BrowserUtils.wait(3);
     }
 
     @Then("the archived text should display on the page")
@@ -77,6 +80,7 @@ public class edit_ConfigPOS_step {
         configPOSPage.POSinputElement.sendKeys("Name changed");
         BrowserUtils.wait(2);
         configPOSPage.POSSaveButton.click();
+        BrowserUtils.wait(2);
     }
 
     @Then("the POS name should be displayed with edited name")
@@ -86,11 +90,13 @@ public class edit_ConfigPOS_step {
 
     @Then("user clicks Set Start Category checkbox and choose category")
     public void user_clicks_Set_Start_Category_checkbox_and_choose_category() {
-        configPOSPage.startCategoryCheckBox.click();
         BrowserUtils.wait(2);
+        configPOSPage.startCategoryCheckBox.click();
+        BrowserUtils.wait(3);
         configPOSPage.startCategoryDropDown.click();
         BrowserUtils.wait(2);
         configPOSPage.CategoryName.click();
+        BrowserUtils.wait(2);
     }
 
     @Then("user clicks save button")

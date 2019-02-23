@@ -16,6 +16,7 @@
     Given user on the data base page
     When user selects the data base
     Then user logs in using "in_pos_manager@info.com" and "KjKtfgrs30"
+    Then the user clicks on Point of Sale
     Then the user clicks on Point of Sale under Configuration
 
   Scenario: user should able to change point of sale status from active to archived
