@@ -1,5 +1,5 @@
 
-@wip
+
 Feature: POS Manager should be able to view the report with different options
 
   Background: Login as manager

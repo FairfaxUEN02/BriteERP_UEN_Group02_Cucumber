@@ -1,6 +1,6 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/features/reportingCharts.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/features/categoryList.feature");
 formatter.feature({
-  "name": "POS Manager should be able to check order reports using by different charts",
+  "name": "Manager should be able to view and modify the Pos categories list under the configuration",
   "description": "",
   "keyword": "Feature",
   "tags": [
@@ -10,7 +10,7 @@ formatter.feature({
   ]
 });
 formatter.background({
-  "name": "Login as manager",
+  "name": "",
   "description": "",
   "keyword": "Background"
 });
@@ -58,17 +58,27 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user clicks on Orders under the Reporting",
+  "name": "the user clicks on products",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "reportingChartsSD.user_clicks_on_Orders_under_the_Reporting()"
+  "location": "manageCategorySD.the_user_clicks_on_products()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user click on Pos Categories",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "manageCategorySD.the_user_click_on_Pos_Categories()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "User should be able to view the reports with Bar Chart",
+  "name": "the user should be able to view the category detail",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -78,21 +88,21 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "name": "user clicks Bar Chart",
+  "name": "the user clicks on an existing category",
   "keyword": "When "
 });
 formatter.match({
-  "location": "reportingChartsSD.user_clicks_Bar_Chart()"
+  "location": "categoryListSD.the_user_clicks_on_an_existing_category()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "verify that the Bar Chart displayed",
-  "keyword": "Then "
+  "name": "the name of the category displayed on the main panel",
+  "keyword": "And "
 });
 formatter.match({
-  "location": "reportingChartsSD.verify_that_the_Bar_Chart_displayed()"
+  "location": "categoryListSD.the_name_of_the_category_displayed_on_the_main_panel()"
 });
 formatter.result({
   "status": "passed"
@@ -101,7 +111,7 @@ formatter.after({
   "status": "passed"
 });
 formatter.background({
-  "name": "Login as manager",
+  "name": "",
   "description": "",
   "keyword": "Background"
 });
@@ -149,17 +159,27 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user clicks on Orders under the Reporting",
+  "name": "the user clicks on products",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "reportingChartsSD.user_clicks_on_Orders_under_the_Reporting()"
+  "location": "manageCategorySD.the_user_clicks_on_products()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user click on Pos Categories",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "manageCategorySD.the_user_click_on_Pos_Categories()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "User should be able to view the reports with Line Chart",
+  "name": "the user should be able to select multiple category",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -169,21 +189,21 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "name": "user clicks Line Chart",
+  "name": "the user clicks on the check box on the first row",
   "keyword": "When "
 });
 formatter.match({
-  "location": "reportingChartsSD.user_clicks_Line_Chart()"
+  "location": "categoryListSD.the_user_clicks_on_the_check_box_on_the_first_row()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "verify that the Line Chart displayed",
+  "name": "All the categories are checked",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "reportingChartsSD.verify_that_the_Line_Chart_displayed()"
+  "location": "categoryListSD.all_the_categories_are_checked()"
 });
 formatter.result({
   "status": "passed"
@@ -192,7 +212,7 @@ formatter.after({
   "status": "passed"
 });
 formatter.background({
-  "name": "Login as manager",
+  "name": "",
   "description": "",
   "keyword": "Background"
 });
@@ -240,18 +260,28 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user clicks on Orders under the Reporting",
+  "name": "the user clicks on products",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "reportingChartsSD.user_clicks_on_Orders_under_the_Reporting()"
+  "location": "manageCategorySD.the_user_clicks_on_products()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user click on Pos Categories",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "manageCategorySD.the_user_click_on_Pos_Categories()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "should not be able to view total price",
-  "description": "  (Negative / Positive Numbers) using by using Pie Chart",
+  "name": "the user should be able to delete multiple categories",
+  "description": "",
   "keyword": "Scenario",
   "tags": [
     {
@@ -260,21 +290,41 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "name": "user clicks Pie Chart",
+  "name": "the user clicks on the multiple categories checkbox",
   "keyword": "When "
 });
 formatter.match({
-  "location": "reportingChartsSD.user_clicks_Pie_Chart()"
+  "location": "categoryListSD.the_user_clicks_on_the_multiple_categories_checkbox()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "verify that the Error Message has displayed",
+  "name": "the user clicks on the action",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "reportingChartsSD.verify_that_the_Error_Message_has_displayed()"
+  "location": "categoryListSD.the_user_clicks_on_the_action()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user click on the \u0027Delete\u0027 under the action",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "categoryListSD.the_user_click_on_the_under_the_action(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "selected categories disappear from the categories list",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "categoryListSD.selected_categories_disappear_from_the_categories_list()"
 });
 formatter.result({
   "status": "passed"
@@ -282,19 +332,8 @@ formatter.result({
 formatter.after({
   "status": "passed"
 });
-formatter.uri("src/test/resources/features/reportingView.feature");
-formatter.feature({
-  "name": "POS Manager should be able to view the report with different options",
-  "description": "",
-  "keyword": "Feature",
-  "tags": [
-    {
-      "name": "@wip"
-    }
-  ]
-});
 formatter.background({
-  "name": "Login as manager",
+  "name": "",
   "description": "",
   "keyword": "Background"
 });
@@ -329,8 +368,7 @@ formatter.match({
   "location": "login_step_definition.user_logs_in_using_and(String,String)"
 });
 formatter.result({
-  "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to contain \"inbox\". Current url: \"http://52.39.162.23/web?\" (tried for 5 second(s) with 500 milliseconds interval)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Falukes-MacBook-Pro.local\u0027, ip: \u0027fe80:0:0:0:c36:9b86:1e29:9e95%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.14.3\u0027, java.version: \u00271.8.0_181\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615355 (d5698f682d8b27..., userDataDir: /var/folders/rb/np9ptwqs1jz...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:49265}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 72.0.3626.109, webStorageEnabled: true}\nSession ID: ed1b833584e007238e4a7179ce3f9d37\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\n\tat com.briteerp.pages.LoginPage.login(LoginPage.java:32)\n\tat com.briteerp.step_definitions.login_step_definition.user_logs_in_using_and(login_step_definition.java:29)\n\tat ✽.user logs in using \"in_pos_manager@info.com\" and \"KjKtfgrs30\"(src/test/resources/features/reportingView.feature:8)\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.step({
   "name": "the user clicks on Point of Sale",
@@ -340,20 +378,30 @@ formatter.match({
   "location": "login_step_definition.the_user_clicks_on_Point_of_Sale()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
-  "name": "user clicks on Orders under the Reporting",
+  "name": "the user clicks on products",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "reportingChartsSD.user_clicks_on_Orders_under_the_Reporting()"
+  "location": "manageCategorySD.the_user_clicks_on_products()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user click on Pos Categories",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "manageCategorySD.the_user_click_on_Pos_Categories()"
+});
+formatter.result({
+  "status": "passed"
 });
 formatter.scenario({
-  "name": "User should be able to change report view preference to Graph",
+  "name": "the user should be able to switch the view type",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -363,31 +411,30 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "name": "the user clicks the graph view preference",
+  "name": "the user clicks on the Kanban view option",
   "keyword": "When "
 });
 formatter.match({
-  "location": "reportingViewSD.the_user_clicks_the_graph_view_preference()"
+  "location": "categoryListSD.the_user_clicks_on_the_Kanban_view_option()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
-  "name": "the system should display the graph view",
+  "name": "the categories displayed in kanban view",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "reportingViewSD.the_system_should_display_the_graph_view()"
+  "location": "categoryListSD.the_categories_displayed_in_kanban_view()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
-formatter.embedding("image/png", "embedded0.png");
 formatter.after({
   "status": "passed"
 });
 formatter.background({
-  "name": "Login as manager",
+  "name": "",
   "description": "",
   "keyword": "Background"
 });
@@ -435,17 +482,27 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user clicks on Orders under the Reporting",
+  "name": "the user clicks on products",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "reportingChartsSD.user_clicks_on_Orders_under_the_Reporting()"
+  "location": "manageCategorySD.the_user_clicks_on_products()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user click on Pos Categories",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "manageCategorySD.the_user_click_on_Pos_Categories()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "User should be able to change report view preference to Pivot",
+  "name": "the user should be able to search using search box",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -455,21 +512,21 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "name": "the user clicks the pivot view preference",
+  "name": "the user enters valid category name",
   "keyword": "When "
 });
 formatter.match({
-  "location": "reportingViewSD.the_user_clicks_the_pivot_view_preference()"
+  "location": "categoryListSD.the_user_enters_valid_category_name()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the system should display the pivot view",
+  "name": "the search box content is equals to the entered name",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "reportingViewSD.the_system_should_display_the_pivot_view()"
+  "location": "categoryListSD.the_search_box_content_is_equals_to_the_entered_name()"
 });
 formatter.result({
   "status": "passed"

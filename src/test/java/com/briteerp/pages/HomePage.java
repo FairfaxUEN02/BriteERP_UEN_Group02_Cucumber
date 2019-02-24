@@ -48,6 +48,9 @@ public class HomePage {
     @FindBy(xpath = "//div[@class='o_mail_chat_sidebar']")
     public WebElement sideBarElement;
 
+    @FindBy(xpath  ="/html/body/div[1]/div[1]/div[1]/div[6]/ul[4]/li[2]/a")
+    public WebElement productButton;
+
     public String currentTitle = "Point of Sale - Odoo";
 
 

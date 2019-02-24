@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import javax.xml.xpath.XPath;
+
 public class PosCategories {
     public PosCategories() {
 
@@ -21,7 +23,10 @@ public class PosCategories {
     @FindBy(xpath = "/html/body/div[1]/div[2]/div[2]/div/div/div/table/tbody/tr[1]/td[3]")
     public WebElement anycategory;
 
-    @FindBy(xpath = "/html/body/div[1]/div[2]/div[1]/div[3]/div[3]/button[2]")
+    @FindBy (xpath = "/html/body/div[1]/div[2]/div[1]/ol/li[2]")
+    public WebElement Mainpanel;
+
+    @FindBy(xpath = "/html/body/div[1]/div[2]/div[1]/div[3]/div[3]/button[1]")
     public WebElement kanbanviewOptionElement;
 
     @FindBy(xpath = "/html/body/div[1]/div[2]/div[2]/div/div/div/table/thead/tr/th[1]/div/input")
@@ -60,10 +65,10 @@ public class PosCategories {
     @FindBy(xpath = "/html/body/div[1]/div[2]/div[1]/div[2]/div[2]/div/div[3]/ul/li[2]/a")
     public WebElement DuplicateButton;
 
-    @FindBy(xpath = "/html/body/div[1]/div[2]/div[1]/div[2]/div[2]/div/div[2]/button")
+    @FindBy(xpath = "(//*[@class='o_dropdown_toggler_btn btn btn-sm dropdown-toggle'])[2]")
     public WebElement AddAttachment;
 
-    @FindBy(xpath = "/html/body/div[1]/div[2]/div[1]/div[2]/div[2]/div/div[2]/ul/li/div/form/input[3]")
+    @FindBy(className = "o_input_file")
     public WebElement AddbuttonforAttach;
 
     @FindBy(xpath = "/html/body/div[1]/div[2]/div[1]/div[2]/div[1]/div/div[1]/button[1]")
@@ -77,6 +82,20 @@ public class PosCategories {
 
     @FindBy(xpath = "/html/body/div[1]/div[2]/div[2]/div/div/div/div/div/div[2]/table/tbody/tr[2]/td[2]/div/div/span")
     public WebElement types;
+
+    @FindBy (xpath= "/html/body/div[1]/div[2]/div[1]/div[1]/div/input")
+    public WebElement searchBox;
+
+    @FindBy (xpath = "/html/body/div[1]/div[2]/div[1]/div[1]/div/div/div[1]/span")
+    public WebElement searchElement;
+
+    @FindBy (xpath = "//div[@class='o_form_sheet']//div[@class='o_input_dropdown']/input")
+    public  WebElement dropdownforType;
+
+    @FindBy (linkText = "boots")
+    public WebElement typeOne;
+
+
 
 
 }

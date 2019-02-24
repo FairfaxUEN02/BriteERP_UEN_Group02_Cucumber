@@ -36,6 +36,4 @@ public class login_step_definition {
         homePage.pointOfSaleElement.click();
     }
 
-
-
 }

@@ -1,4 +1,4 @@
-@wip
+
 Feature: POS Manager should be able to check order reports using by different charts
 
 
